@@ -1,58 +1,73 @@
-# 프로세스 협력 파일 처리기
-
-### 개요
-- 클라이언트-서버 모델을 사용하여 파일의 각 줄 처리
-- 클라이언트는 파일의 각 줄을 서버에 전송
-- 서버는 지정된 처리 모드에 따라 각 줄을 처리한 후 결과를 클라이언트에 반환
-- 처리 모드:
-  - `count`: 문자 수 및 단어 수 계산
-  - `upper`: 대문자로 변환
-  - `lower`: 소문자로 변환
-  - `reverse`: 문자열 뒤집기
-- 사용법
-\`\`\`
-./file_processor_clnt <input_file> <mode>
-\`\`\`
-- `<input_file>`: 처리할 텍스트 파일의 경로
-- `<mode>`: count, upper, lower, reverse 중 하나
-
 ## 실행결과
 
 ### 클라이언트: count
-\`\`\`
-$ ./file_processor_clnt test.txt count
+
+```
+
+./file_processor_clnt test.txt count
+
+ $ ./file_processor_clnt test.txt count
 클라이언트: 서버에 연결 시도 중...
+
 클라이언트: 서버 연결됨.
+
 1번째 줄 전송...
+
 1번째 줄 결과 수신: Line 1: 11 chars, 2 words
+
 2번째 줄 전송...
+
 2번째 줄 결과 수신: Line 2: 45 chars, 9 words
+
 3번째 줄 전송...
+
 3번째 줄 결과 수신: Line 3: 19 chars, 4 words
+
 4번째 줄 전송...
+
 4번째 줄 결과 수신: Line 4: 18 chars, 4 words
+
 5번째 줄 전송...
+
 5번째 줄 결과 수신: Line 5: 23 chars, 5 words
+
 6번째 줄 전송...
+
 6번째 줄 결과 수신: Line 6: 3 chars, 1 words
+
 7번째 줄 전송...
+
 7번째 줄 결과 수신: Line 7: 7 chars, 2 words
+
 8번째 줄 전송...
+
 8번째 줄 결과 수신: Line 8: 17 chars, 3 words
+
 9번째 줄 전송...
+
 9번째 줄 결과 수신: Line 9: 19 chars, 4 words
+
 10번째 줄 전송...
+
 10번째 줄 결과 수신: Line 10: 24 chars, 5 words
 
 === 처리 통계 ===
+
  처리 모드: count
+
  처리한 줄 수: 10줄
+
  소요 시간: 0.00초
-\`\`\`
+
+```
 
 ### 클라이언트: upper
-\`\`\`
-$ ./file_processor_clnt test.txt upper
+
+```
+
+./file_processor_clnt test.txt upper
+
+ ./file_processor_clnt test.txt upper
 클라이언트: 서버에 연결 시도 중...
 클라이언트: 서버 연결됨.
 1번째 줄 전송...
@@ -80,82 +95,50 @@ $ ./file_processor_clnt test.txt upper
  처리 모드: upper
  처리한 줄 수: 10줄
  소요 시간: 0.00초
-\`\`\`
+
+
+```
+
+ 
 
 ### 클라이언트: lower
-\`\`\`
-$ ./file_processor_clnt test.txt lower
-클라이언트: 서버에 연결 시도 중...
-클라이언트: 서버 연결됨.
-1번째 줄 전송...
-1번째 줄 결과 수신: Line 1: hello world
-2번째 줄 전송...
-2번째 줄 결과 수신: Line 2: this is a sample text file for the assignment.
-3번째 줄 전송...
-3번째 줄 결과 수신: Line 3: c programming is fun.
-4번째 줄 전송...
-4번째 줄 결과 수신: Line 4: using fifo for ipc.
-5번째 줄 전송...
-5번째 줄 결과 수신: Line 5: keep calm and code on.
-6번째 줄 전송...
-6번째 줄 결과 수신: Line 6: one
-7번째 줄 전송...
-7번째 줄 결과 수신: Line 7: two two
-8번째 줄 전송...
-8번째 줄 결과 수신: Line 8: three three three
-9번째 줄 전송...
-9번째 줄 결과 수신: Line 9: four four four four
-10번째 줄 전송...
-10번째 줄 결과 수신: Line 10: five five five five five
 
-=== 처리 통계 ===
- 처리 모드: lower
- 처리한 줄 수: 10줄
- 소요 시간: 0.00초
-\`\`\`
+```
+
+./file_processor_clnt test.txt lower
+
+  .
+
+  . <이 부분은 실제 출력 결과로 대체>
+
+  .
+
+```
+
+ 
 
 ### 클라이언트: reverse
-\`\`\`
-$ ./file_processor_clnt test.txt reverse
-클라이언트: 서버에 연결 시도 중...
-클라이언트: 서버 연결됨.
-1번째 줄 전송...
-1번째 줄 결과 수신: Line 1: dlroW olleH
-2번째 줄 전송...
-2번째 줄 결과 수신: Line 2: .tnemngissa eht rof elif txet elpmas a si sihT
-3번째 줄 전송...
-3번째 줄 결과 수신: Line 3: .nuf si gnimmargorp C
-4번째 줄 전송...
-4번째 줄 결과 수신: Line 4: .CPI rof OFIF gnisU
-5번째 줄 전송...
-5번째 줄 결과 수신: Line 5: .no edoc dna mlac peeK
-6번째 줄 전송...
-6번째 줄 결과 수신: Line 6: eno
-7번째 줄 전송...
-7번째 줄 결과 수신: Line 7: owt owt
-8번째 줄 전송...
-8번째 줄 결과 수신: Line 8: eerht eerht eerht
-9번째 줄 전송...
-9번째 줄 결과 수신: Line 9: ruof ruof ruof ruof
-10번째 줄 전송...
-10번째 줄 결과 수신: Line 10: evif evif evif evif evif
 
-=== 처리 통계 ===
- 처리 모드: reverse
- 처리한 줄 수: 10줄
- 소요 시간: 0.00초
-\`\`\`
+```
+
+./file_processor_clnt test.txt reverse
+
+  .
+
+  . <이 부분은 실제 출력 결과로 대체>
+
+  .
+
+```
+
+ 
 
 ### 서버
-\`\`\`
-$ ./file_processor_svr
-서버: 클라이언트를 기다리는 중...
-서버: 클라이언트 연결됨.
-서버: 처리 모드 수신 [count]
-1번째 줄 처리 중...
-2번째 줄 처리 중...
-...
-10번째 줄 처리 중...
-서버: 'END' 메시지 수신. 종료합니다.
-\`\`\`
-EOT
+
+```
+
+  1번째 줄 처리 중...
+
+  2번째 줄 처리 중...
+
+```
