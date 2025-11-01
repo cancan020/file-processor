@@ -3,60 +3,33 @@
 ### 클라이언트: count
 
 ```
-
-./file_processor_clnt test.txt count
-
- $ ./file_processor_clnt test.txt count
+./file_processor_clnt a.txt count
 클라이언트: 서버에 연결 시도 중...
-
 클라이언트: 서버 연결됨.
-
 1번째 줄 전송...
-
 1번째 줄 결과 수신: Line 1: 11 chars, 2 words
-
 2번째 줄 전송...
-
-2번째 줄 결과 수신: Line 2: 45 chars, 9 words
-
+2번째 줄 결과 수신: Line 2: 17 chars, 4 words
 3번째 줄 전송...
-
-3번째 줄 결과 수신: Line 3: 19 chars, 4 words
-
+3번째 줄 결과 수신: Line 3: 12 chars, 3 words
 4번째 줄 전송...
-
-4번째 줄 결과 수신: Line 4: 18 chars, 4 words
-
+4번째 줄 결과 수신: Line 4: 27 chars, 6 words
 5번째 줄 전송...
-
-5번째 줄 결과 수신: Line 5: 23 chars, 5 words
-
+5번째 줄 결과 수신: Line 5: 17 chars, 3 words
 6번째 줄 전송...
-
-6번째 줄 결과 수신: Line 6: 3 chars, 1 words
-
+6번째 줄 결과 수신: Line 6: 25 chars, 5 words
 7번째 줄 전송...
-
-7번째 줄 결과 수신: Line 7: 7 chars, 2 words
-
+7번째 줄 결과 수신: Line 7: 25 chars, 5 words
 8번째 줄 전송...
-
-8번째 줄 결과 수신: Line 8: 17 chars, 3 words
-
+8번째 줄 결과 수신: Line 8: 9 chars, 2 words
 9번째 줄 전송...
-
-9번째 줄 결과 수신: Line 9: 19 chars, 4 words
-
+9번째 줄 결과 수신: Line 9: 15 chars, 3 words
 10번째 줄 전송...
-
-10번째 줄 결과 수신: Line 10: 24 chars, 5 words
+10번째 줄 결과 수신: Line 10: 7 chars, 2 words
 
 === 처리 통계 ===
-
  처리 모드: count
-
  처리한 줄 수: 10줄
-
  소요 시간: 0.00초
 
 ```
@@ -64,32 +37,28 @@
 ### 클라이언트: upper
 
 ```
-
-./file_processor_clnt test.txt upper
-
- ./file_processor_clnt test.txt upper
 클라이언트: 서버에 연결 시도 중...
 클라이언트: 서버 연결됨.
 1번째 줄 전송...
 1번째 줄 결과 수신: Line 1: HELLO WORLD
 2번째 줄 전송...
-2번째 줄 결과 수신: Line 2: THIS IS A SAMPLE TEXT FILE FOR THE ASSIGNMENT.
+2번째 줄 결과 수신: Line 2: NICE TOO MEET YOU
 3번째 줄 전송...
-3번째 줄 결과 수신: Line 3: C PROGRAMMING IS FUN.
+3번째 줄 결과 수신: Line 3: HOW ARE YOU?
 4번째 줄 전송...
-4번째 줄 결과 수신: Line 4: USING FIFO FOR IPC.
+4번째 줄 결과 수신: Line 4: I'M FIND THANK YOU AND YOU?
 5번째 줄 전송...
-5번째 줄 결과 수신: Line 5: KEEP CALM AND CODE ON.
+5번째 줄 결과 수신: Line 5: WHAT'S YOUR NAME?
 6번째 줄 전송...
-6번째 줄 결과 수신: Line 6: ONE
+6번째 줄 결과 수신: Line 6: MY NAME IS HYEONWOO JEONG
 7번째 줄 전송...
-7번째 줄 결과 수신: Line 7: TWO TWO
+7번째 줄 결과 수신: Line 7: WOW WHAT A BEAUTIFUL NAME
 8번째 줄 전송...
-8번째 줄 결과 수신: Line 8: THREE THREE THREE
+8번째 줄 결과 수신: Line 8: THANK YOU
 9번째 줄 전송...
-9번째 줄 결과 수신: Line 9: FOUR FOUR FOUR FOUR
+9번째 줄 결과 수신: Line 9: YOU ARE WELCOME
 10번째 줄 전송...
-10번째 줄 결과 수신: Line 10: FIVE FIVE FIVE FIVE FIVE
+10번째 줄 결과 수신: Line 10: BYE BYE
 
 === 처리 통계 ===
  처리 모드: upper
@@ -109,7 +78,33 @@
 
   .
 
-  . <이 부분은 실제 출력 결과로 대체>
+  클라이언트: 서버에 연결 시도 중...
+클라이언트: 서버 연결됨.
+1번째 줄 전송...
+1번째 줄 결과 수신: Line 1: hello world
+2번째 줄 전송...
+2번째 줄 결과 수신: Line 2: nice too meet you
+3번째 줄 전송...
+3번째 줄 결과 수신: Line 3: how are you?
+4번째 줄 전송...
+4번째 줄 결과 수신: Line 4: i'm find thank you and you?
+5번째 줄 전송...
+5번째 줄 결과 수신: Line 5: what's your name?
+6번째 줄 전송...
+6번째 줄 결과 수신: Line 6: my name is hyeonwoo jeong
+7번째 줄 전송...
+7번째 줄 결과 수신: Line 7: wow what a beautiful name
+8번째 줄 전송...
+8번째 줄 결과 수신: Line 8: thank you
+9번째 줄 전송...
+9번째 줄 결과 수신: Line 9: you are welcome
+10번째 줄 전송...
+10번째 줄 결과 수신: Line 10: bye bye
+
+=== 처리 통계 ===
+ 처리 모드: lower
+ 처리한 줄 수: 10줄
+ 소요 시간: 0.00초
 
   .
 
@@ -125,7 +120,33 @@
 
   .
 
-  . <이 부분은 실제 출력 결과로 대체>
+  .클라이언트: 서버에 연결 시도 중...
+클라이언트: 서버 연결됨.
+1번째 줄 전송...
+1번째 줄 결과 수신: Line 1: dlroW olleH
+2번째 줄 전송...
+2번째 줄 결과 수신: Line 2: uoy teem oot ecin
+3번째 줄 전송...
+3번째 줄 결과 수신: Line 3: ?uoy era woH
+4번째 줄 전송...
+4번째 줄 결과 수신: Line 4: ?uoy dna uoy knahT dnif m'I
+5번째 줄 전송...
+5번째 줄 결과 수신: Line 5: ?eman ruoy s'tahW
+6번째 줄 전송...
+6번째 줄 결과 수신: Line 6: gnoeJ oownoeyH si eman ym
+7번째 줄 전송...
+7번째 줄 결과 수신: Line 7: eman lufituaeb a tahW woW
+8번째 줄 전송...
+8번째 줄 결과 수신: Line 8: uoy knahT
+9번째 줄 전송...
+9번째 줄 결과 수신: Line 9: emocleW era uoY
+10번째 줄 전송...
+10번째 줄 결과 수신: Line 10: eyB eyB
+
+=== 처리 통계 ===
+ 처리 모드: reverse
+ 처리한 줄 수: 10줄
+ 소요 시간: 0.00초
 
   .
 
@@ -137,8 +158,19 @@
 
 ```
 
-  1번째 줄 처리 중...
-
-  2번째 줄 처리 중...
+서버: 클라이언트를 기다리는 중...
+서버: 클라이언트 연결됨.
+서버: 처리 모드 수신 [reverse]
+1번째 줄 처리 중...
+2번째 줄 처리 중...
+3번째 줄 처리 중...
+4번째 줄 처리 중...
+5번째 줄 처리 중...
+6번째 줄 처리 중...
+7번째 줄 처리 중...
+8번째 줄 처리 중...
+9번째 줄 처리 중...
+10번째 줄 처리 중...
+서버: 'END' 메시지 수신. 종료합니다.
 
 ```
