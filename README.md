@@ -30,7 +30,7 @@ $ ./file_processor_clnt test.txt upper 클라이언트: 서버에 연결 시도 
 
 
 ### 클라이언트: lower
-$ ./file_processor_clnt test.txt lower 클라이언트: 서버에 연결 시도 중... 클라이언트: 서버 연결됨. 1번째 줄 전송... 1번째 줄 결과 수신: Line 1: hello world 2번째 줄 전송... 2번째 줄 결과 수신: Line 2: this is a sample text file for the assignment. 3번째 줄 전송... 3번째 줄 결과 수신: Line 3: c programming is fun. 4번째 줄 전송... 4번째 줄 결과 수신: Line 4: using fifo for ipc. 5번째 줄 전송... 5번째 줄 결과 수신: Line 5: keep calm and code on. 6번째 줄 전송... 6번째 줄 결과 수신: Line 6: one 7번째 줄 전송... 7번째 줄 결과 수신: Line 7: two two 8번째 줄 전송... 8번째 줄 결과 수신: Line 8: three three three 9번째 줄 전송... 9번째 줄 결과 수신: Line 9: four four four four 10번째 줄 전송... 10번째 줄 결과 수신: Line 10: five five five five five
+$ ./file_processor_clnt test.txt lower 클라이언트: 서버에 연결 시도 중... 클라이언트: 서버 연결됨. 1번째 줄 전송... 1번째 줄 결과 수신: Line 1: hello world 2번째 줄 전송... 2번째 줄 결과 수신: Line 2: this is a sample text file for the assignment. 3번째 줄 전송... 3번째 줄 결과 수신: Line 3: c programming is fun. 4번째 줄 전송... 4번째 줄 결과 수신: Line 4: using fifo for ipc. 5번째 줄 전송... 5번째 줄 결과 수신: Line 5: keep calm and code on. 6번째 줄 전송... 6번째 줄 결과 수신: Line 6: one 7번째 줄 전송... 7S번째 줄 결과 수신: Line 7: two two 8번째 줄 전송... 8번째 줄 결과 수신: Line 8: three three three 9번째 줄 전송... 9번째 줄 결과 수신: Line 9: four four four four 10번째 줄 전송... 10번째 줄 결과 수신: Line 10: five five five five five
 
 === 처리 통계 === 처리 모드: lower 처리한 줄 수: 10줄 소요 시간: 0.00초
 
